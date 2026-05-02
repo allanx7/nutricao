@@ -1,5 +1,5 @@
 ﻿
-const WHATSAPP_NUMBER = "5511999999999";
+const WHATSAPP_NUMBER = "5512992090876";
 
 
 function createWhatsAppUrl(messageText) {
