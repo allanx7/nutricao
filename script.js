@@ -1,21 +1,13 @@
-﻿/* =========================================================
-   Basic settings
-   ========================================================= */
-
-// Update this number with the real WhatsApp business number (country code + DDD + number).
+﻿
 const WHATSAPP_NUMBER = "5511999999999";
 
-/* =========================================================
-   WhatsApp helpers
-   ========================================================= */
 
-// Creates the WhatsApp URL using encodeURIComponent as requested.
 function createWhatsAppUrl(messageText) {
   const encodedMessage = encodeURIComponent(messageText);
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
 }
 
-// Converts yyyy-mm-dd to dd/mm/yyyy for a friendlier message.
+
 function formatDateToBr(dateValue) {
   if (!dateValue) return "data a combinar";
 
@@ -25,7 +17,7 @@ function formatDateToBr(dateValue) {
   return `${day}/${month}/${year}`;
 }
 
-// Main function requested: reads form values and redirects to WhatsApp.
+
 function sendToWhatsApp(event) {
   event.preventDefault();
 
@@ -41,11 +33,10 @@ function sendToWhatsApp(event) {
 
   const whatsappUrl = createWhatsAppUrl(mensagemCompleta);
 
-  // Redirects user to WhatsApp chat.
   window.location.href = whatsappUrl;
 }
 
-// Sets default text for quick WhatsApp buttons (hero + floating button).
+
 function setupQuickWhatsAppLinks() {
   const quickMessage = "Olá, quero melhorar minha saúde e gostaria de agendar uma consulta.";
   const quickUrl = createWhatsAppUrl(quickMessage);
@@ -55,20 +46,16 @@ function setupQuickWhatsAppLinks() {
   });
 }
 
-/* =========================================================
-   Fade-in on scroll
-   ========================================================= */
 
 function setupRevealOnScroll() {
   const revealElements = document.querySelectorAll(".reveal");
 
-  // If user prefers reduced motion, show everything immediately.
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     revealElements.forEach((element) => element.classList.add("visible"));
     return;
   }
 
-  // Fallback for older browsers.
+
   if (!("IntersectionObserver" in window)) {
     revealElements.forEach((element) => element.classList.add("visible"));
     return;
@@ -92,9 +79,7 @@ function setupRevealOnScroll() {
   revealElements.forEach((element) => observer.observe(element));
 }
 
-/* =========================================================
-   Startup
-   ========================================================= */
+
 
 document.addEventListener("DOMContentLoaded", () => {
   setupQuickWhatsAppLinks();
