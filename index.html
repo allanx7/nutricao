@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Atendimento nutricional com acolhimento, cuidado e plano simples para sua rotina.">
+  <title>NutriCuidado | Saúde com orientação</title>
+
+  <!-- Fonte limpa e legivel para facilitar a leitura -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Link para acessibilidade por teclado -->
+  <a class="skip-link" href="#conteudo">Pular para o conteudo</a>
+
+  <header class="site-header" id="home">
+    <div class="container header-content">
+      <a class="logo" href="#home">NutriCuidado</a>
+
+      <!-- Menu curto e direto para facilitar a navegacao -->
+      <nav class="main-nav" aria-label="Menu principal">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- HERO -->
+    <section class="hero section">
+      <div class="container hero-content">
+        <p class="hero-label reveal">Atendimento humano e profissional</p>
+        <h1 class="reveal">Cuide da sua saude com orientacao profissional</h1>
+        <p class="hero-subtitle reveal">
+          Alimentação simples para o seu dia a dia, com apoio em cada passo.
+        </p>
+        <a class="btn btn-primary js-whatsapp-link reveal" href="#" target="_blank" rel="noopener noreferrer">
+          Agendar pelo WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section" id="sobre">
+      <div class="container about-layout">
+        <div class="about-text">
+          <h2 class="section-title reveal">Sobre</h2>
+          <p class="reveal">
+            Sou nutricionista com anos de experiencia em acompanhamento individual.
+            Meu atendimento e acolhedor, com escuta atenta e orientacoes claras.
+            O objetivo e ajudar voce a cuidar da saude com tranquilidade e seguranca.
+          </p>
+        </div>
+
+        <!-- Card especial do doutor: troque a imagem quando quiser -->
+        <article class="doctor-card reveal" aria-label="Apresentacao do profissional">
+          <p class="doctor-badge">Profissional de confianca</p>
+
+          <figure class="doctor-photo-wrapper">
+            <img
+              class="doctor-photo"
+              src="doutor-placeholder.svg"
+              alt="Foto do doutor"
+              loading="lazy"
+              width="420"
+              height="500"
+            >
+          </figure>
+
+          <h3 class="doctor-name">Dr. Nome Sobrenome</h3>
+          <p class="doctor-role">Nutricionista Clinico</p>
+
+          <ul class="doctor-highlights">
+            <li>Atendimento com calma e clareza</li>
+            <li>Plano adaptado para sua rotina</li>
+            <li>Acompanhamento proximo e humano</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- SERVICOS -->
+    <section class="section section-soft" id="servicos">
+      <div class="container">
+        <h2 class="section-title reveal">Serviços</h2>
+        <div class="card-grid">
+          <article class="card reveal">
+            <h3>Reeducação alimentar</h3>
+            <p>Aprenda a comer melhor sem dietas extremas.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Acompanhamento nutricional</h3>
+            <p>Consultas regulares para ajustar seu plano com calma.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Plano personalizado</h3>
+            <p>Orientação feita para sua rotina, gostos e necessidades.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Como funciona</h2>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-number">1</span>
+            <p>Entre em contato</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-number">2</span>
+            <p>Agende sua consulta</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-number">3</span>
+            <p>Comece seu acompanhamento</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="section section-soft">
+      <div class="container">
+        <h2 class="section-title reveal">Depoimentos</h2>
+        <div class="testimonial-grid">
+          <blockquote class="testimonial reveal">
+            "Atendimento atencioso e explicação simples. Me senti segura desde a primeira consulta."
+            <cite>- Maria, 67 anos</cite>
+          </blockquote>
+          <blockquote class="testimonial reveal">
+            "Consegui melhorar meus habitos sem sofrimento. Recomendo para quem quer cuidado de verdade."
+            <cite>- Joao, 58 anos</cite>
+          </blockquote>
+          <blockquote class="testimonial reveal">
+            "Profissional paciente e dedicada. Hoje me alimento melhor e com mais confiança."
+            <cite>- Ana, 62 anos</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- AGENDAMENTO -->
+    <section class="section" id="contato">
+      <div class="container narrow">
+        <h2 class="section-title reveal">Agendamento</h2>
+        <form id="agendamento-form" class="schedule-form reveal">
+          <label for="nome">Nome</label>
+          <input id="nome" name="nome" type="text" required placeholder="Seu nome completo">
+
+          <label for="telefone">Telefone</label>
+          <input id="telefone" name="telefone" type="tel" required placeholder="(11) 99999-9999">
+
+          <label for="data">Data</label>
+          <input id="data" name="data" type="date" required>
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="4" placeholder="Quero melhorar minha saúde."></textarea>
+
+          <button type="submit" class="btn btn-primary">Agendar via WhatsApp</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <p><strong>NutriCuidado</strong></p>
+        <p>Contato: (11) 99999-9999</p>
+        <p>Email: contato@nutricuidado.com</p>
+      </div>
+
+      <div class="social-links" aria-label="Redes sociais">
+        <a href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <rect x="3" y="3" width="18" height="18" rx="5" ry="5"></rect>
+            <circle cx="12" cy="12" r="4"></circle>
+            <circle cx="17.2" cy="6.8" r="1"></circle>
+          </svg>
+        </a>
+        <a href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M14.5 8H16V5h-2c-2.4 0-4 1.6-4 4v2H8v3h2v5h3v-5h2.2l.8-3H13V9c0-.6.2-1 1.5-1Z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <p class="copyright">© 2026 NutriCuidado. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Botao flutuante para contato rapido -->
+  <a class="whatsapp-float js-whatsapp-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp">
+    WhatsApp
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
