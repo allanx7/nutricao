@@ -1,0 +1,15 @@
+<svg width="420" height="500" viewBox="0 0 420 500" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder para foto do doutor">
+  <rect width="420" height="500" rx="28" fill="url(#bg)"/>
+  <circle cx="210" cy="175" r="78" fill="#F2DAB8"/>
+  <path d="M104 408C104 344.487 155.487 293 219 293H201C264.513 293 316 344.487 316 408V438H104V408Z" fill="#FFFFFF" fill-opacity="0.93"/>
+  <rect x="45" y="45" width="330" height="410" rx="20" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="2" stroke-dasharray="8 8"/>
+  <text x="210" y="470" text-anchor="middle" fill="#2F6F2F" font-size="22" font-family="Poppins, Arial, sans-serif" font-weight="600">
+    Troque pela foto do doutor
+  </text>
+  <defs>
+    <linearGradient id="bg" x1="22" y1="20" x2="390" y2="488" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F9F3E6"/>
+      <stop offset="1" stop-color="#DFF2D7"/>
+    </linearGradient>
+  </defs>
+</svg>
